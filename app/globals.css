@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@theme {
+  /* --- Theme primary colors --- */
+  --color-primary-a0: #cae30b;
+  --color-primary-a10: #cfe646;
+  --color-primary-a20: #d4ea64;
+  --color-primary-a30: #d9ed7c;
+  --color-primary-a40: #def092;
+  --color-primary-a50: #e3f3a6;
+
+  /* --- Theme surface colors --- */
+  --color-surface-a0: #121212;
+  --color-surface-a10: #252525;
+  --color-surface-a20: #393939;
+  --color-surface-a30: #4f4f4f;
+  --color-surface-a40: #666666;
+  --color-surface-a50: #7d7d7d;
+
+  /* --- Theme tonal surface colors --- */
+  --color-surface-tonal-a0: #212318;
+  --color-surface-tonal-a10: #33352b;
+  --color-surface-tonal-a20: #47493f;
+  --color-surface-tonal-a30: #5c5d55;
+  --color-surface-tonal-a40: #71736b;
+  --color-surface-tonal-a50: #878882;
+
+  /* --- Success colors --- */
+  --color-success-a0: #22946e;
+  --color-success-a10: #5ba989;
+  --color-success-a20: #86bfa6;
+
+  /* --- Warning colors --- */
+  --color-warning-a0: #a87a2a;
+  --color-warning-a10: #ba945a;
+  --color-warning-a20: #cbae84;
+
+  /* --- Danger colors --- */
+  --color-danger-a0: #9c2121;
+  --color-danger-a10: #b4544c;
+  --color-danger-a20: #ca7f77;
+
+  /* --- Info colors --- */
+  --color-info-a0: #21498a;
+  --color-info-a10: #4b6ca2;
+  --color-info-a20: #7590ba;
+}

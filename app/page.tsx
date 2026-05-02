@@ -1,9 +1,13 @@
-import React from 'react'
+import Container from "@/components/Container";
 
 function page() {
-  return ( 
-    <div>cihuy</div>
-  )
+  return (
+    <>
+      <Container>
+        <div>INI ISI MY KONTEN PORTO GWEHJ</div>
+      </Container>
+    </>
+  );
 }
 
-export default page
+export default page;
