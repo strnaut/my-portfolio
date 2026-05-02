@@ -15,8 +15,10 @@ function Navbar() {
     <nav className="bg-surface-a10 py-4">
       <Container>
         <div className="flex flex-row items-center justify-between">
-          <h1 className="text-xl font-bold text-primary-a0">
-            <Link href="/"> <span className="text-white">Farghali</span>&apos;s Space</Link>
+          <h1 className="text-xl font-bold text-white">
+            <Link href="/">
+              <span className="text-primary-a0">Farghali</span>&apos;s Space
+            </Link>
           </h1>
           <ul className="flex space-x-4 text-white">
             {Nav_items.map((item) => (
