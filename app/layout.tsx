@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-surface-a0">
+    <html lang="en" className="bg-surface-a0 scroll-smooth">
       <body className={`${poppins.className} font-sans antialiased text-white select-none`}>
         <Navbar />
         {children}
