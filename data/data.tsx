@@ -1,12 +1,12 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export const Nav_items = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "#hero" },
   { name: "About", path: "#about" },
-  { name: "Projects", path: "/projects" },
-  { name: "Experience", path: "/experience" },
-  { name: "Certifications", path: "/certifications" },
-  { name: "Contact", path: "/contact" },
+  { name: "Projects", path: "#projects" },
+  { name: "Experience", path: "#experience" },
+  { name: "Certifications", path: "#certifications" },
+  { name: "Contact", path: "#contact" },
 ];
 
 export const Social_links =[
