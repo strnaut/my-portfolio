@@ -77,15 +77,15 @@ export const projects = [
     description:
       "A monitoring dashboard integrating WCI (Working Condition Index) to evaluate mine site conditions, and OSC (Operator Skill Check) to assess operator performance and heavy equipment safety.",
     image: "/photos/projectDashboard.png",
-    url: "/",
+    url: "https://drive.google.com/file/d/1oLJqWuUMH7o-KLCZy-LdttLF-sONRyzV/view?usp=sharing",
     techStack: "Internship Project - #LookerStudio #GoogleSpreadsheets",
     type: "web",
   },
   {
     name: "Working Condition Index & Operator Skill Check Mobile App",
-    description: "Description of Project 3",
+    description: "A mobile application integrating WCI (Working Condition Index) to evaluate mine site conditions, and OSC (Operator Skill Check) to assess operator performance and heavy equipment safety.",
     image: "/photos/projectMobile.png",
-    url: "http://localhost:3000/",
+    url: "https://drive.google.com/file/d/1oLJqWuUMH7o-KLCZy-LdttLF-sONRyzV/view?usp=sharing",
     techStack: "Internship Project - #AppSheet",
     type: "mobile",
   },
@@ -94,7 +94,16 @@ export const projects = [
     description:
       "A modern florist e-commerce platform designed for seamless flower shopping, featuring a responsive cart system.",
     image: "/photos/projectFloine.webp",
-    url: "http://localhost:3000/",
+    url: "https://github.com/strnaut/floine",
+    techStack: "Project Based Learning - #Codeigniter4 #PHP #MySQL",
+    type: "web",
+  },
+  {
+    name: "UB Vocational Warehouse Inventory System",
+    description:
+      "An integrated inventory management system designed to streamline goods distribution, tracking, and stock control for the Vocational Faculty of Universitas Brawijaya.",
+    image: "/photos/projectGudangVokasi.png",
+    url: "https://github.com/strnaut/gudang-vokasi-ub",
     techStack: "Project Based Learning - #Codeigniter4 #PHP #MySQL",
     type: "web",
   },
