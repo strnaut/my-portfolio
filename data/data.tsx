@@ -76,7 +76,7 @@ export const projects = [
     name: "Dashboard Working Condition Index & Operator Skill Check",
     description:
       "A monitoring dashboard integrating WCI (Working Condition Index) to evaluate mine site conditions, and OSC (Operator Skill Check) to assess operator performance and heavy equipment safety.",
-    image: "/photos/projectDashboard.png",
+    image: "/photos/projectDashboard.webp",
     url: "https://drive.google.com/file/d/1oLJqWuUMH7o-KLCZy-LdttLF-sONRyzV/view?usp=sharing",
     techStack: "Internship Project - #LookerStudio #GoogleSpreadsheets",
     type: "web",
@@ -84,7 +84,7 @@ export const projects = [
   {
     name: "Working Condition Index & Operator Skill Check Mobile App",
     description: "A mobile application integrating WCI (Working Condition Index) to evaluate mine site conditions, and OSC (Operator Skill Check) to assess operator performance and heavy equipment safety.",
-    image: "/photos/projectMobile.png",
+    image: "/photos/projectMobile.webp",
     url: "https://drive.google.com/file/d/1oLJqWuUMH7o-KLCZy-LdttLF-sONRyzV/view?usp=sharing",
     techStack: "Internship Project - #AppSheet",
     type: "mobile",
@@ -102,7 +102,7 @@ export const projects = [
     name: "UB Vocational Warehouse Inventory System",
     description:
       "An integrated inventory management system designed to streamline goods distribution, tracking, and stock control for the Vocational Faculty of Universitas Brawijaya.",
-    image: "/photos/projectGudangVokasi.png",
+    image: "/photos/projectGudangVokasi.webp",
     url: "https://github.com/strnaut/gudang-vokasi-ub",
     techStack: "Project Based Learning - #Codeigniter4 #PHP #MySQL",
     type: "web",
