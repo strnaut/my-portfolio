@@ -104,7 +104,7 @@ export const projects = [
       "An integrated inventory management system designed to streamline goods distribution, tracking, and stock control for the Vocational Faculty of Universitas Brawijaya.",
     image: "/photos/projectGudangVokasi.webp",
     url: "https://github.com/strnaut/gudang-vokasi-ub",
-    techStack: "Project Based Learning - #Codeigniter4 #PHP #MySQL",
+    techStack: "Project Based Learning - #PHP #MySQL",
     type: "web",
   },
   {
