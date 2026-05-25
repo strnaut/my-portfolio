@@ -30,11 +30,11 @@ function Projects() {
                 src={project.image}
                 alt={project.name}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className={` ${project.type === "web" ? "object-cover" : "object-contain"} transition-transform duration-700 scale-100 group-hover:scale-110`}
               />
 
-              {/* Judul Melayang (Kanan Bawah) - Muncul saat awal */}
-              <div className="absolute bottom-6 left-6 z-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+
+              <div className="absolute bottom-6 left-6 max-w-sm z-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
                 <div className="px-5 py-2 rounded-xl bg-surface-a0/80 backdrop-blur-md border border-white/10 shadow-2xl">
                   <h3 className="text-xl font-bold text-white">
                     {project.name}
@@ -42,29 +42,22 @@ function Projects() {
                 </div>
               </div>
 
-              {/* Overlay Hover (Keluar pas di-hover) */}
-              <div className="absolute inset-0 z-20 flex flex-col justify-end p-8 bg-linear-to-t from-surface-a0 via-surface-a0/80 to-transparent opacity-0 translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                <div className="space-y-4">
+              <div className="absolute inset-0 z-20 flex flex-col justify-end p-8 bg-linear-to-t from-surface-a0 via-surface-a0/90 to-transparent opacity-0 translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <h3 className="text-2xl font-bold text-primary-a20">
                       {project.name}
                     </h3>
                   </div>
 
-                  <p className="text-sm text-whire leading-relaxed line-clamp-3">
+                  <p className="text-sm text-whire leading-relaxed ">
                     {project.description}
                   </p>
 
                   {/* Placeholder Techstack - Bisa kamu sesuaikan di data.tsx nanti */}
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="text-[10px] font-mono text-primary-a30">
-                      #NextJS
-                    </span>
-                    <span className="text-[10px] font-mono text-primary-a30">
-                      #Tailwind
-                    </span>
-                    <span className="text-[10px] font-mono text-primary-a30">
-                      #Laravel
+                  <div className="flex flex-wrap">
+                    <span className="text-[12px] font-mono text-primary-a30">
+                      {project.techStack || "Tech Stack not specified"}
                     </span>
                   </div>
 

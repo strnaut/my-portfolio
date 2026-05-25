@@ -25,7 +25,7 @@ const Contact = () => {
       label: "instagram",
       value: "instagram.com/strnaut",
       icon: "mdi:instagram",
-      href: "https://github.com/strnaut",
+      href: "https://instagram.com/strnaut",
     },
   ];
 
@@ -34,7 +34,7 @@ const Contact = () => {
       className=""
       id="contact"
     >
-      <div className="w-full py-16 px-6 rounded-2xl">
+      <div className="w-full py-24 px-6 rounded-2xl">
         <div className="container mx-auto max-w-4xl">
           {/* Header Section */}
           <div className="text-center mb-8">

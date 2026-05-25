@@ -58,60 +58,88 @@ export const Skill_tools = [
   { name: "Figma", icon: "devicon:figma" },
   { name: "Draw.io", icon: "vscode-icons:file-type-drawio" },
   { name: "VSCode", icon: "devicon:vscode" },
+  { name: "Looker Studio", icon: "logos:looker-icon" },
+  { name: "Google AppSheet", icon: "arcticons:appsheet" },
 ];
 
 export const projects = [
   {
-    name: "projek gelap",
+    name: "Rumah Makan Husnul Khatimah",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/photos/project1.png",
+      "A modern restaurant website built with CodeIgniter 4, showcasing the menu and providing an online ordering system.",
+    image: "/photos/projectRMHK.webp",
+    url: "https://github.com/strnaut/rumah-makan-husnul-khatimah",
+    techStack: "Final Project - #CodeIgniter4 #PHP #MySQL",
+    type: "web",
+  },
+  {
+    name: "Dashboard Working Condition Index & Operator Skill Check",
+    description:
+      "A monitoring dashboard integrating WCI (Working Condition Index) to evaluate mine site conditions, and OSC (Operator Skill Check) to assess operator performance and heavy equipment safety.",
+    image: "/photos/projectDashboard.png",
     url: "/",
-    techStack: "",
-    theme: "dark",
+    techStack: "Internship Project - #LookerStudio #GoogleSpreadsheets",
+    type: "web",
   },
   {
-    name: "Projek terang",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/photos/project2.png",
-    url: "http://localhost:3000/",
-    techStack: "",
-    theme: "light",
-  },
-  {
-    name: "Project mobile",
+    name: "Working Condition Index & Operator Skill Check Mobile App",
     description: "Description of Project 3",
-    image: "/photos/project3.jpeg",
+    image: "/photos/projectMobile.png",
     url: "http://localhost:3000/",
-    techStack: "",
-    theme: "dark",
+    techStack: "Internship Project - #AppSheet",
+    type: "mobile",
   },
   {
-    name: "Project 4",
-    description: "Description of Project 4",
-    image: "/photos/project1.png",
+    name: "Floine",
+    description:
+      "A modern florist e-commerce platform designed for seamless flower shopping, featuring a responsive cart system.",
+    image: "/photos/projectFloine.webp",
     url: "http://localhost:3000/",
-    techStack: "",
-    theme: "dark",
+    techStack: "Project Based Learning - #Codeigniter4 #PHP #MySQL",
+    type: "web",
+  },
+  {
+    name: "Portfolio Website",
+    description:
+      "This is a personal portfolio website built using Next.js and Tailwind CSS. It showcases my projects, skills, and experiences in a clean and modern design.",
+    image: "/photos/projectPortfolio.webp",
+    url: "/",
+    techStack: "#NextJS #Tailwind #Laravel",
+    type: "web",
   },
 ];
 
 export const experiences = [
   {
-    position: "Data Analyst",
-    company: "PT United Tracktors",
-    date: "July - August 2023",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    position: "Full-Stack Developer Intern",
+    company: "PT Dwitunggal Jaya Pratama Maju (SG8Group)",
+    date: "December 2025 - Present",
+    description: [
+      "Rebuilt the company's main website and CMS system using Laravel and React to improve operational efficiency and UI interactiv ity.",
+      "Developed an e-commerce application integrated with a payment gateway to digitize and accelerate transaction processes.",
+    ],
     type: "Intern",
   },
   {
     position: "System Analyst",
     company: "PT Bina Pertiwi",
     date: "August - December 2024",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: [
+      "Developed the ESS 2.0 system to streamline administrative processes and improve digital accessibility to Human Capital (HC) services.",
+      "Designing the HCIS architecture and KPI metrics as the strategic foundation for the company’s digitalization roadmap.",
+      "Designing effective business workflows and visual communication to improve coordination efficiency among stakeholders.",
+    ],
+    type: "Intern",
+  },
+  {
+    position: "Data Analyst",
+    company: "PT United Tractors Tbk",
+    date: "July - August 2023",
+    description: [
+      "Built an interactive dashboard in Looker Studio for real-time data visualization to support managerial decision-making.",
+      "Optimizing database management using Google Spreadsheets to ensure a clean and consistent data input structure.",
+      "Developed an AppSheet-based field assessment application to digitize the monitoring of mining operations.",
+    ],
     type: "Intern",
   },
 ];

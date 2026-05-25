@@ -16,47 +16,71 @@ function Skills() {
           "React",
           "Next.js",
           "Tailwind",
+          "Python",
+          "C++",
         ].includes(s.name),
       ),
     },
     {
       title: "Backend & Database",
       skills: Skill_tools.filter((s) =>
-        [
-          "Laravel",
-          "CodeIgniter 4",
-          "Python",
-          "C++",
-          "MySQL",
-          "PostgreSQL",
+        ["Laravel",
+          "CodeIgniter 4", 
+          "MySQL", 
+          "PostgreSQL"
         ].includes(s.name),
       ),
     },
     {
       title: "Tools & Design",
       skills: Skill_tools.filter((s) =>
-        ["Git", "Figma", "Draw.io", "VSCode"].includes(s.name),
+        [
+          "Git",
+          "Figma",
+          "Draw.io",
+          "VSCode",
+          "Looker Studio",
+          "Google AppSheet",
+        ].includes(s.name),
       ),
     },
   ];
 
+  // ... (bagian import dan variabel categories tetap sama)
+
   return (
     <section id="skills" className="py-24 relative overflow-hidden">
-      <div className="container max-w-5xl px-6 mx-auto">
+      <div className="container max-w-6xl px-6 mx-auto">
         <div className="flex flex-col items-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-2">
             Skills & <span className="text-primary-a20">Tools</span>
           </h2>
           <div className="h-1 w-20 bg-primary-a20 rounded-full shadow-[0_0_10px_rgba(var(--primary-a20),0.5)]"></div>
         </div>
-        <div className="flex flex-col gap-12">
+
+        {/* GRID UTAMA: 
+            Di desktop pakai 2 kolom (md:grid-cols-2).
+        */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {categories.map((cat, idx) => (
-            <div key={idx} className="space-y-6">
-              <h3 className="text-sm uppercase tracking-[0.3em] text-white/90 font-bold px-2 border-l-2 border-primary-a20">
+            <div
+              key={idx}
+              /* LOGIKA SPAN: 
+                 Jika index adalah 0 (Frontend), pakai col-span-2 agar lebar penuh.
+              */
+              className={`space-y-6 ${idx === 0 ? "md:col-span-2" : "md:col-span-1"}`}
+            >
+              <h3 className="text-sm uppercase tracking-[0.3em] text-white font-bold px-2 border-l-3 border-primary-a20">
                 {cat.title}
               </h3>
 
-              <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
+              {/* GRID ICON:
+                  Untuk Frontend (idx 0) kita buat kolomnya lebih banyak (6) agar tidak terlalu besar-besar box-nya.
+                  Untuk yang lain (idx 1 & 2) kita buat 3 kolom agar pas di setengah layar.
+              */}
+              <div
+                className={`grid gap-4 grid-cols-2 ${idx === 0 ? "md:grid-cols-6" : "md:grid-cols-3"} `}
+              >
                 {cat.skills.map((skill) => (
                   <div
                     key={skill.name}

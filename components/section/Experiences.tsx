@@ -18,13 +18,13 @@ function Experiences() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="group relative p-6 rounded-2xl bg-surface-a10 border border-white/5 hover:border-primary-a20 transition-all duration-500 overflow-hidden"
+               className="group relative flex flex-col p-6 rounded-2xl bg-surface-a10 border border-white/5 hover:border-primary-a20 transition-all duration-500 overflow-hidden "
             >
               <div className="absolute -right-10 -top-10 w-32 h-32 bg-primary-a20/10 blur-3xl group-hover:bg-primary-a20/20 transition-all" />
-              <div className="relative z-10">
-                <div className="flex justify-between items-start mb-6">
+              <div className="relative z-10 flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-4">
                   <div className="mb-4">
-                    <h3 className="text-xl font-bold text-white group-hover:text-primary-a20 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-1">
                       {exp.position}
                     </h3>
                     <p className="text-primary-a30 text-sm font-medium">
@@ -36,18 +36,18 @@ function Experiences() {
                   </span>
                 </div>
 
-                <p className="text-sm text-white/80 leading-relaxed text-justify line-clamp-4 group-hover:line-clamp-none transition-all duration-500">
-                  {exp.description}
-                </p>
+                <ul className="text-sm text-white/80 leading-relaxed text-justify list-disc pl-5 space-y-1 mb-4">
+                  {exp.description.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
 
-                <div className="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
+                <div className="mt-auto pt-4 border-t border-white/5 flex justify-between items-center">
                   <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary-a20">
                     {exp.type}
                   </span>
                   <div className="flex -space-x-2">
-                      <div
-                        className="w-1.5 h-1.5 rounded-full bg-primary-a20"
-                      />
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary-a20" />
                   </div>
                 </div>
               </div>

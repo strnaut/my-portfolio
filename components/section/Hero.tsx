@@ -15,7 +15,7 @@ function Hero() {
           <div className="col-span-1 flex justify-center p-4">
             <span className="absolute bg-radial from-primary-a40 to-primary-a0 z-0 w-120 h-120 mx-auto rounded-full -translate-y-7 blur-xs animate-bounce-slow" />
             <Image
-              src="/photos/main-photo-no-bg.webp"
+              src="/photos/hero-photo.webp"
               alt="Foto profil Farghali Syafyurrahman - Web Developer"
               width={480}
               height={480}
