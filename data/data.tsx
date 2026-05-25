@@ -67,7 +67,7 @@ export const projects = [
     name: "Rumah Makan Husnul Khatimah",
     description:
       "A modern restaurant website built with CodeIgniter 4, showcasing the menu and providing an online ordering system.",
-    image: "/photos/projectRMHK.webp",
+    image: "/photos/finalProject.webp",
     url: "https://github.com/strnaut/rumah-makan-husnul-khatimah",
     techStack: "Final Project - #CodeIgniter4 #PHP #MySQL",
     type: "web",
