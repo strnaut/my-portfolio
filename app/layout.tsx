@@ -30,9 +30,11 @@ export default function RootLayout({
         className={`${poppins.className} font-sans antialiased text-white select-none`}
       >
         <Navbar />
-        <Background>
-          <Container>{children}</Container>
-        </Background>
+        <main>
+          <Background>
+            <Container>{children}</Container>
+          </Background>
+        </main>
         <Footer />
       </body>
     </html>
