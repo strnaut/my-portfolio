@@ -79,7 +79,7 @@ function Hero() {
               View My Work
             </Link>
             <Link
-              href="/files/CV_Farghali_Syafyurrahman_EN.pdf"
+              href="/files/CV_Farghali_Syafyurrahman.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-a20 rounded-md px-4 py-2 bg-surface-a20 border border-primary-a30 text-sm md:text-base"
